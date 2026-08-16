@@ -1,7 +1,17 @@
 {
   "name": "dsh-mxl-vision-assist",
   "version": "1.0.0",
-  "private": true,
   "description": "Vision assist: converts image blocks to vision-model text descriptions for text-only main models; provides the capture_window host tool",
-  "main": "lib/index.js"
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youkeq/mxl-dsh-plugins.git",
+    "directory": "dsh-mxl-vision-assist"
+  }
 }

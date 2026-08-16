@@ -1,7 +1,6 @@
 {
   "name": "dsh-mxl-custom-settings",
   "version": "1.0.0",
-  "private": true,
   "description": "MXL custom settings panel (host half + browser half)",
   "main": "lib/index.js",
   "exports": {
@@ -13,5 +12,16 @@
     "client": {
       "platform": "web"
     }
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youkeq/mxl-dsh-plugins.git",
+    "directory": "dsh-mxl-custom-settings"
   }
 }
