@@ -23,6 +23,7 @@ Each plugin's README contains the full installation steps (copy package → add 
 
 - The vision plugin's model dropdown and switches are best managed with the custom settings panel.
 - Both plugins can be installed independently or together.
+- Too lazy to install? Just let the AI do it.
 
 ---
 
@@ -53,3 +54,4 @@ Each plugin's README contains the full installation steps (copy package → add 
 
 - 视觉辅助插件的模型下拉、开关等配置，推荐用自定义设置面板管理
 - 两个插件可独立安装，也可一起安装
+- 自己懒得装？直接丢给 AI 安装就行。
