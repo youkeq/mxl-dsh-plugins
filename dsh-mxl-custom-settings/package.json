@@ -1,0 +1,17 @@
+{
+  "name": "dsh-mxl-custom-settings",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MXL custom settings panel (host half + browser half)",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web"
+    }
+  }
+}
