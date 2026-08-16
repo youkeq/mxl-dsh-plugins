@@ -1,5 +1,7 @@
 # dsh-mxl-custom-settings
 
+[![npm](https://img.shields.io/npm/v/dsh-mxl-custom-settings)](https://www.npmjs.com/package/dsh-mxl-custom-settings)
+
 A generic settings panel for DSH custom plugins: scans the `.dsh-plugin.<id>.json` registration files in the workspace root and renders them as settings cards (switch / dropdown / text) under **Settings → Custom Settings**.
 
 ## Features
@@ -11,8 +13,16 @@ A generic settings panel for DSH custom plugins: scans the `.dsh-plugin.<id>.jso
 
 ## Installation
 
-1. Copy this package to `<DSH_HOME>/profiles/node_modules/dsh-mxl-custom-settings/`
-2. Append to `<DSH_HOME>/profiles/web/cordis.patch.yml`:
+### npm (recommended)
+
+Install from npm into the DSH profile directory:
+
+```bash
+cd <DSH_HOME>/profiles
+npm i dsh-mxl-custom-settings
+```
+
+Then append to `<DSH_HOME>/profiles/web/cordis.patch.yml`:
 
 ```yaml
 - insert:
@@ -20,6 +30,12 @@ A generic settings panel for DSH custom plugins: scans the `.dsh-plugin.<id>.jso
       name: dsh-mxl-custom-settings
 ```
 
+Restart `dsh web`.
+
+### Manual copy
+
+1. Copy this package to `<DSH_HOME>/profiles/node_modules/dsh-mxl-custom-settings/`
+2. Append the `cordis.patch.yml` row above
 3. Restart `dsh web`
 
 ## Registration file format
@@ -54,6 +70,8 @@ Located in the workspace root, named `.dsh-plugin.<id>.json`:
 
 # dsh-mxl-custom-settings — 自定义设置面板
 
+[![npm](https://img.shields.io/npm/v/dsh-mxl-custom-settings)](https://www.npmjs.com/package/dsh-mxl-custom-settings)
+
 通用的自定义插件配置面板：扫描工作区根目录的 `.dsh-plugin.<id>.json` 注册文件，渲染成设置卡片（开关 / 下拉 / 文本），在 设置 → 自定义设置 中可视化管理。
 
 ## 功能
@@ -65,8 +83,16 @@ Located in the workspace root, named `.dsh-plugin.<id>.json`:
 
 ## 安装
 
-1. 将本包复制到 `<DSH_HOME>/profiles/node_modules/dsh-mxl-custom-settings/`
-2. 在 `<DSH_HOME>/profiles/web/cordis.patch.yml` 末尾追加：
+### 方式一：npm 安装（推荐）
+
+在 DSH 的 profiles 目录执行：
+
+```bash
+cd <DSH_HOME>/profiles
+npm i dsh-mxl-custom-settings
+```
+
+然后在 `<DSH_HOME>/profiles/web/cordis.patch.yml` 末尾追加：
 
 ```yaml
 - insert:
@@ -74,6 +100,12 @@ Located in the workspace root, named `.dsh-plugin.<id>.json`:
       name: dsh-mxl-custom-settings
 ```
 
+重启 `dsh web`。
+
+### 方式二：手动复制
+
+1. 将本包复制到 `<DSH_HOME>/profiles/node_modules/dsh-mxl-custom-settings/`
+2. 追加上面那条 `cordis.patch.yml` 配置
 3. 重启 `dsh web`
 
 ## 注册文件格式

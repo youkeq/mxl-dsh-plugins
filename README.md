@@ -11,13 +11,25 @@ A collection of custom plugins for DeepSeek Harness (DSH). Each plugin installs 
 
 ## Quick start
 
-Each plugin's README contains the full installation steps (copy package → add one row to `cordis.patch.yml` → restart), for example:
+Install both plugins from npm into the DSH profile directory:
+
+```bash
+cd <DSH_HOME>/profiles
+npm i dsh-mxl-vision-assist dsh-mxl-custom-settings
+```
+
+Then append the two rows to `<DSH_HOME>/profiles/web/cordis.patch.yml`:
 
 ```yaml
 - insert:
     - id: dsh-mxl-vision-assist-persist
       name: dsh-mxl-vision-assist
+- insert:
+    - id: dsh-mxl-custom-settings-panel
+      name: dsh-mxl-custom-settings
 ```
+
+Restart `dsh web`. Manual-copy installs are also described in each plugin's README.
 
 ## Using them together
 
@@ -42,13 +54,25 @@ Each plugin's README contains the full installation steps (copy package → add 
 
 ## 快速开始
 
-每个插件目录内的 README 含完整安装步骤（复制包 → `cordis.patch.yml` 加一行 → 重启），例如：
+在 DSH 的 profiles 目录用 npm 一条命令装两个：
+
+```bash
+cd <DSH_HOME>/profiles
+npm i dsh-mxl-vision-assist dsh-mxl-custom-settings
+```
+
+再在 `<DSH_HOME>/profiles/web/cordis.patch.yml` 末尾追加两行配置：
 
 ```yaml
 - insert:
     - id: dsh-mxl-vision-assist-persist
       name: dsh-mxl-vision-assist
+- insert:
+    - id: dsh-mxl-custom-settings-panel
+      name: dsh-mxl-custom-settings
 ```
+
+重启 `dsh web` 即可。手动复制安装的方式见各插件目录内的 README。
 
 ## 配套使用
 

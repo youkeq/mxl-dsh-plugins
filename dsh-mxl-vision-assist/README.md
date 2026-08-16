@@ -1,5 +1,7 @@
 # dsh-mxl-vision-assist
 
+[![npm](https://img.shields.io/npm/v/dsh-mxl-vision-assist)](https://www.npmjs.com/package/dsh-mxl-vision-assist)
+
 Give the main model eyes — and let the AI verify its own work by taking screenshots.
 
 A DeepSeek Harness (DSH) plugin that automatically turns images into text descriptions for the main model, and provides a window-capture tool the AI can use to visually inspect its own output.
@@ -34,8 +36,16 @@ If `visionModel` is left empty, the plugin automatically picks the first image-c
 
 ## Installation
 
-1. Copy this package to `<DSH_HOME>/profiles/node_modules/dsh-mxl-vision-assist/`.
-2. Append to `<DSH_HOME>/profiles/web/cordis.patch.yml`:
+### npm (recommended)
+
+Install from npm into the DSH profile directory:
+
+```bash
+cd <DSH_HOME>/profiles
+npm i dsh-mxl-vision-assist
+```
+
+Then append to `<DSH_HOME>/profiles/web/cordis.patch.yml`:
 
 ```yaml
 - insert:
@@ -43,7 +53,13 @@ If `visionModel` is left empty, the plugin automatically picks the first image-c
       name: dsh-mxl-vision-assist
 ```
 
-3. Restart `dsh web`.
+Restart `dsh web`.
+
+### Manual copy
+
+1. Copy this package to `<DSH_HOME>/profiles/node_modules/dsh-mxl-vision-assist/`
+2. Append the `cordis.patch.yml` row above
+3. Restart `dsh web`
 
 ## Configuration
 
@@ -77,6 +93,8 @@ If `visionModel` is left empty, the plugin automatically picks the first image-c
 ## 中文版
 
 # dsh-mxl-vision-assist — 视觉辅助插件
+
+[![npm](https://img.shields.io/npm/v/dsh-mxl-vision-assist)](https://www.npmjs.com/package/dsh-mxl-vision-assist)
 
 让主模型"看见"图片，并让 AI 可以自己截图、自己看、自己验证。
 
@@ -112,8 +130,16 @@ If `visionModel` is left empty, the plugin automatically picks the first image-c
 
 ## 安装
 
-1. 将本包复制到 `<DSH_HOME>/profiles/node_modules/dsh-mxl-vision-assist/`
-2. 在 `<DSH_HOME>/profiles/web/cordis.patch.yml` 末尾追加：
+### 方式一：npm 安装（推荐）
+
+在 DSH 的 profiles 目录执行：
+
+```bash
+cd <DSH_HOME>/profiles
+npm i dsh-mxl-vision-assist
+```
+
+然后在 `<DSH_HOME>/profiles/web/cordis.patch.yml` 末尾追加：
 
 ```yaml
 - insert:
@@ -121,6 +147,12 @@ If `visionModel` is left empty, the plugin automatically picks the first image-c
       name: dsh-mxl-vision-assist
 ```
 
+重启 `dsh web`。
+
+### 方式二：手动复制
+
+1. 将本包复制到 `<DSH_HOME>/profiles/node_modules/dsh-mxl-vision-assist/`
+2. 追加上面那条 `cordis.patch.yml` 配置
 3. 重启 `dsh web`
 
 ## 配置
